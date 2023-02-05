@@ -158,6 +158,9 @@ export const ButtonImg = styled.img`
   filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.25));
   padding: 5px;
   position: absolute;
+  @media (min-width: 470px) {
+    width: 85%;
+  }
 `;
 
 export const ButtonText = styled.div`
@@ -171,7 +174,7 @@ export const ButtonText = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (min-width: 490px) {
-    font-size: 17px;
+  @media (min-width: 470px) {
+    font-size: 13px;
   }
 `;
