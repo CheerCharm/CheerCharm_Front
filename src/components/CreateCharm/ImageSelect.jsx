@@ -86,27 +86,6 @@ const ImageSelect = ({ setDesign }) => {
         onClick={() =>
           setClicked({
             zero: false,
-            one: false,
-            two: false,
-            three: false,
-            four: false,
-            five: false,
-            six: true,
-            seven: false,
-            eight: false,
-            nine: false,
-            ten: false,
-            eleven: false,
-          })
-        }
-      >
-        <S.CharmImg src={src[1]} />
-        <S.Circle>{clicked.six === true ? <S.CheckedCircle /> : null}</S.Circle>
-      </S.CharmRect>
-      <S.CharmRect
-        onClick={() =>
-          setClicked({
-            zero: false,
             one: true,
             two: false,
             three: false,
@@ -121,31 +100,8 @@ const ImageSelect = ({ setDesign }) => {
           })
         }
       >
-        <S.CharmImg src={src[2]} />
+        <S.CharmImg src={src[1]} />
         <S.Circle>{clicked.one === true ? <S.CheckedCircle /> : null}</S.Circle>
-      </S.CharmRect>
-      <S.CharmRect
-        onClick={() =>
-          setClicked({
-            zero: false,
-            one: false,
-            two: false,
-            three: false,
-            four: false,
-            five: false,
-            six: false,
-            seven: true,
-            eight: false,
-            nine: false,
-            ten: false,
-            eleven: false,
-          })
-        }
-      >
-        <S.CharmImg src={src[3]} />
-        <S.Circle>
-          {clicked.seven === true ? <S.CheckedCircle /> : null}
-        </S.Circle>
       </S.CharmRect>
       <S.CharmRect
         onClick={() =>
@@ -165,31 +121,8 @@ const ImageSelect = ({ setDesign }) => {
           })
         }
       >
-        <S.CharmImg src={src[4]} />
+        <S.CharmImg src={src[2]} />
         <S.Circle>{clicked.two === true ? <S.CheckedCircle /> : null}</S.Circle>
-      </S.CharmRect>
-      <S.CharmRect
-        onClick={() =>
-          setClicked({
-            zero: false,
-            one: false,
-            two: false,
-            three: false,
-            four: false,
-            five: false,
-            six: false,
-            seven: false,
-            eight: true,
-            nine: false,
-            ten: false,
-            eleven: false,
-          })
-        }
-      >
-        <S.CharmImg src={src[5]} />
-        <S.Circle>
-          {clicked.eight === true ? <S.CheckedCircle /> : null}
-        </S.Circle>
       </S.CharmRect>
       <S.CharmRect
         onClick={() =>
@@ -209,9 +142,122 @@ const ImageSelect = ({ setDesign }) => {
           })
         }
       >
-        <S.CharmImg src={src[6]} />
+        <S.CharmImg src={src[3]} />
         <S.Circle>
           {clicked.three === true ? <S.CheckedCircle /> : null}
+        </S.Circle>
+      </S.CharmRect>
+      <S.CharmRect
+        onClick={() =>
+          setClicked({
+            zero: false,
+            one: false,
+            two: false,
+            three: false,
+            four: true,
+            five: false,
+            six: false,
+            seven: false,
+            eight: false,
+            nine: false,
+            ten: false,
+            eleven: false,
+          })
+        }
+      >
+        <S.CharmImg src={src[4]} />
+        <S.Circle>
+          {clicked.four === true ? <S.CheckedCircle /> : null}
+        </S.Circle>
+      </S.CharmRect>
+      <S.CharmRect
+        onClick={() =>
+          setClicked({
+            zero: false,
+            one: false,
+            two: false,
+            three: false,
+            four: false,
+            five: true,
+            six: false,
+            seven: false,
+            eight: false,
+            nine: false,
+            ten: false,
+            eleven: false,
+          })
+        }
+      >
+        <S.CharmImg src={src[5]} />
+        <S.Circle>
+          {clicked.five === true ? <S.CheckedCircle /> : null}
+        </S.Circle>
+      </S.CharmRect>
+      <S.CharmRect
+        onClick={() =>
+          setClicked({
+            zero: false,
+            one: false,
+            two: false,
+            three: false,
+            four: false,
+            five: false,
+            six: true,
+            seven: false,
+            eight: false,
+            nine: false,
+            ten: false,
+            eleven: false,
+          })
+        }
+      >
+        <S.CharmImg src={src[6]} />
+        <S.Circle>{clicked.six === true ? <S.CheckedCircle /> : null}</S.Circle>
+      </S.CharmRect>
+      <S.CharmRect
+        onClick={() =>
+          setClicked({
+            zero: false,
+            one: false,
+            two: false,
+            three: false,
+            four: false,
+            five: false,
+            six: false,
+            seven: true,
+            eight: false,
+            nine: false,
+            ten: false,
+            eleven: false,
+          })
+        }
+      >
+        <S.CharmImg src={src[7]} />
+        <S.Circle>
+          {clicked.seven === true ? <S.CheckedCircle /> : null}
+        </S.Circle>
+      </S.CharmRect>
+      <S.CharmRect
+        onClick={() =>
+          setClicked({
+            zero: false,
+            one: false,
+            two: false,
+            three: false,
+            four: false,
+            five: false,
+            six: false,
+            seven: false,
+            eight: true,
+            nine: false,
+            ten: false,
+            eleven: false,
+          })
+        }
+      >
+        <S.CharmImg src={src[8]} />
+        <S.Circle>
+          {clicked.eight === true ? <S.CheckedCircle /> : null}
         </S.Circle>
       </S.CharmRect>
       <S.CharmRect
@@ -232,32 +278,9 @@ const ImageSelect = ({ setDesign }) => {
           })
         }
       >
-        <S.CharmImg src={src[7]} />
+        <S.CharmImg src={src[9]} />
         <S.Circle>
           {clicked.nine === true ? <S.CheckedCircle /> : null}
-        </S.Circle>
-      </S.CharmRect>
-      <S.CharmRect
-        onClick={() =>
-          setClicked({
-            zero: false,
-            one: false,
-            two: false,
-            three: false,
-            four: true,
-            five: false,
-            six: false,
-            seven: false,
-            eight: false,
-            nine: false,
-            ten: false,
-            eleven: false,
-          })
-        }
-      >
-        <S.CharmImg src={src[8]} />
-        <S.Circle>
-          {clicked.four === true ? <S.CheckedCircle /> : null}
         </S.Circle>
       </S.CharmRect>
       <S.CharmRect
@@ -278,31 +301,8 @@ const ImageSelect = ({ setDesign }) => {
           })
         }
       >
-        <S.CharmImg src={src[9]} />
-        <S.Circle>{clicked.ten === true ? <S.CheckedCircle /> : null}</S.Circle>
-      </S.CharmRect>
-      <S.CharmRect
-        onClick={() =>
-          setClicked({
-            zero: false,
-            one: false,
-            two: false,
-            three: false,
-            four: true,
-            five: false,
-            six: false,
-            seven: false,
-            eight: false,
-            nine: false,
-            ten: false,
-            eleven: false,
-          })
-        }
-      >
         <S.CharmImg src={src[10]} />
-        <S.Circle>
-          {clicked.five === true ? <S.CheckedCircle /> : null}
-        </S.Circle>
+        <S.Circle>{clicked.ten === true ? <S.CheckedCircle /> : null}</S.Circle>
       </S.CharmRect>
       <S.CharmRect
         onClick={() =>

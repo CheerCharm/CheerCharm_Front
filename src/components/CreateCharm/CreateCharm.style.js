@@ -82,7 +82,7 @@ export const TitleInput = styled.input`
   font-weight: 400;
   font-size: 14px;
   margin: 10px 0;
-  padding: 3px 0 3px 10px;
+  padding: 3px 0 3px 12px;
 `;
 
 export const ContentInput = styled.textarea`
@@ -139,7 +139,7 @@ export const RangeRect = styled.div`
 
 export const ImageContainer = styled.div`
   width: 85%;
-  height: 710px;
+  height: 1400px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
