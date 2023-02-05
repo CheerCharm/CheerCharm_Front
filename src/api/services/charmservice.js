@@ -14,6 +14,12 @@ const CharmService = {
       image: image,
     }),
   deleteCharm: id => http.delete(`/charms/${id}/`),
+  uploadImage: (id, file_front, file_back) =>
+    http.post(`/charms/${id}/upload/`, file_front, {
+      headers: {
+        "content-type": "multipart/form-data",
+      },
+    }),
 };
 
 export default CharmService;

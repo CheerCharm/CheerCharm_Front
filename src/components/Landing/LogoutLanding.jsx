@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import * as S from "./Logout.style";
-import Header from "../common/Header";
+import Header from "../common/header/Header";
 import Background from "../common/Background";
 import { Galmuri } from "../../css/Font";
 import { PinkButton } from "../common/PinkButton.style";
@@ -17,7 +17,7 @@ const LogoutLanding = () => {
   return (
     <>
       <Background>
-        <Header type="logout" />
+        <Header />
         <S.TitleBar>
           <Galmuri size="13px" weight="400" padding="5px">
             내 소원을 응원하는 마음이 가득 담긴

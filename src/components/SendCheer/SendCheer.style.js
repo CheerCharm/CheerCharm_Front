@@ -43,6 +43,7 @@ export const ContentText = styled.div`
   align-items: center;
   justify-content: center;
   padding: 44px;
+  text-align: center;
 `;
 
 export const CheerText = styled.textarea`

@@ -36,7 +36,7 @@ export const MyBox = styled.div`
 `;
 
 export const TabTitle = styled.div`
-  width: 70%;
+  width: 78%;
   display: flex;
   justify-content: space-between;
   margin: 30px 0;
@@ -71,6 +71,7 @@ export const CharmImg = styled.img`
   width: 154px;
   height: 221px;
   margin-bottom: 10px;
+  object-fit: cover;
 `;
 
 export const TrashRect = styled.div`

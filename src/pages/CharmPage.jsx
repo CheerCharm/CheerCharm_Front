@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import CheeringCharm from "../components/CheerCharm/CheeringCharm";
-import CheeredCharm from "../components/CheerCharm/CheeredCharm";
+import CheeringCharm from "../components/CheerCharm/cheering/CheeringCharm";
+import CheeredCharm from "../components/CheerCharm/cheered/CheeredCharm";
 import { GetCharm } from "../api/charm";
 
 const CharmPage = () => {

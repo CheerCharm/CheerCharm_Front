@@ -78,3 +78,12 @@ export const DeleteCharm = async id => {
     return Promise.reject(error);
   }
 };
+
+export const UploadImage = async (id, file_front, file_back) => {
+  try {
+    const response = await CharmService.uploadImage(id, file_front, file_back);
+    return Promise.resolve(response);
+  } catch (error) {
+    return Promise.reject(error);
+  }
+};

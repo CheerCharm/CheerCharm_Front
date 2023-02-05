@@ -88,11 +88,16 @@ export const RequestLogout = async () => {
 
 // User 프로필 (GET) (id(hashed), nickname, password, username 반환)
 export const RequestGetUser = async () => {
-  try {
-    const response = await http.get(`/accounts/login/`);
-    return Promise.resolve(response);
-  } catch (error) {
-    console.log(error);
-    Refresh(error);
+  const isLogout = !localStorage.getItem("token");
+  if (isLogout) {
+    return;
+  } else {
+    try {
+      const response = await http.get(`/accounts/login/`);
+      return Promise.resolve(response);
+    } catch (error) {
+      console.log(error);
+      Refresh(error);
+    }
   }
 };

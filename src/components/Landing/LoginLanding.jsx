@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Header from "../common/Header";
+import Header from "../common/header/Header";
 import Background from "../common/Background";
 import { Space } from "./Logout.style";
 import NoCharm from "./NoCharm";

@@ -42,9 +42,7 @@ const RegisterMenu = () => {
     e.preventDefault();
     RequestSignin(id, pw, nickname)
       .then(response => {
-        alert("회원가입 성공!");
         navigate("/auth/login");
-        console.log("네비게이트");
       })
       .catch(error => {
         if (error.response.status === 400) {

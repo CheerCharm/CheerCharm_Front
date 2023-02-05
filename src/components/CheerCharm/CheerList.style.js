@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CheerRect = styled.div`
-  width: 57px;
+  width: 18%;
   height: auto;
   margin: 10px;
   flex-shrink: 0;
@@ -11,7 +11,7 @@ export const CheerRect = styled.div`
 `;
 
 export const CheerImg = styled.img`
-  width: 57px;
+  width: 100%;
   height: auto;
   margin-top: 10px;
 `;
@@ -20,7 +20,7 @@ export const CheerText = styled.div`
   font-family: "Galmuri";
   font-stretch: condensed;
   font-size: 14px;
-  width: 57px;
+  width: 55px;
   text-align: center;
   word-break: break-all;
   margin-top: 5px;

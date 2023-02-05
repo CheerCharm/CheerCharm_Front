@@ -12,7 +12,7 @@ import pwIcon from "../../assets/images/Login/pwicon.png";
 import kakao from "../../assets/images/Login/kakao3.svg";
 
 // import Components
-import Footer from "../common/Footer";
+import Footer from "../common/footer/Footer";
 
 // import api
 import { RequestLogin } from "../../api/user";

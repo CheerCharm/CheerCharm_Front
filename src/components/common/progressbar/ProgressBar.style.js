@@ -7,6 +7,7 @@ export const Container = styled.div`
   align-items: center;
   height: 30px;
   position: relative;
+  overflow: hidden;
   /* border: solid 1px; */
 `;
 
@@ -72,6 +73,7 @@ export const CloverIcon = styled.div`
   width: 20px;
   height: 23px;
   transform: rotate(-33.39deg);
+  overflow-x: initial;
 
   // 애니메이션 관련, 미완
 

@@ -5,6 +5,15 @@
   overflow-x: hidden;
 }
 
+/* media query 적용 */
+
+@media (min-width: 576px) {
+  .wrapper {
+    width: 390px;
+    margin: 0 auto;
+  }
+}
+
 /* fonts */
 
 /* for password in Input */
@@ -52,9 +61,8 @@
 }
 
 @font-face {
-  font-family: "Dunggeunmo";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff")
-    format("woff");
+  font-family: "PFStardust-old";
+  src: url("./fonts/PF스타더스트\ 1.4\(Old\ Ver\).otf") format("woff2");
   font-weight: normal;
   font-style: normal;
 }

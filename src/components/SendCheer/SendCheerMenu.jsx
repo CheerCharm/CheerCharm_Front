@@ -1,22 +1,24 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import * as S from "./SendCheer.style";
-import Header from "../common/Header";
+import Header from "../common/header/Header";
 import { Galmuri } from "../../css/Font";
 import { PinkButton } from "../common/PinkButton.style";
-import Modal from "../common/Modal";
+import Modal from "../common/modal/Modal";
 import Background from "../common/Background";
 import { GetCharm } from "../../api/charm";
 import { SendCheer } from "../../api/cheer";
-import Footer from "../common/Footer";
+import Footer from "../common/footer/Footer";
+import { RequestGetUser } from "../../api/user";
 
 const SendCheerMenu = () => {
   const navigate = useNavigate();
 
   // Header 상태를 토큰값에 따라 변경
-  const isLogin = !!localStorage.getItem("token");
+  // const isLogin = !!localStorage.getItem("token");
+
   // 닉네임 (받는사람)
-  const [nickname, setNickname] = useState("반영안됨");
+  const [nickname, setNickname] = useState("");
   // 부적 제목
   const [title, setTitle] = useState("");
   // 부적 내용
@@ -33,6 +35,10 @@ const SendCheerMenu = () => {
 
   // 변경하지 않는 값 불러오기
   useEffect(() => {
+    // 여기서 request를 할 수가 없지... GetCharm에서 할 수 있도록 해야함.
+    RequestGetUser().then(response => {
+      if (response) setNickname(response.data.data.nickname);
+    });
     GetCharm(id).then(response => {
       setContent(response.data.data.content);
       setTitle(response.data.data.title);
@@ -87,9 +93,15 @@ const SendCheerMenu = () => {
     } else {
       setModalId(0);
       // 이곳에서 request 예정
-      SendCheer(id, cheerName, cheerContent).then(response =>
-        console.log(response),
-      );
+      SendCheer(id, cheerName, cheerContent)
+        .then()
+        .catch(error => {
+          //console.log(error);
+          alert(
+            "이미 응원이 채워진 부적입니다!\n친구의 부적을 구경하러 갈까요?",
+          );
+          navigate(`/${user}/charm_id/${id}`);
+        });
       setCheerContent("");
       setCheerName("");
     }
@@ -113,10 +125,30 @@ const SendCheerMenu = () => {
         </S.TitleText>
         <S.Line />
         <S.ContentTitle>
-          <Galmuri size="15px">{title}</Galmuri>
+          <Galmuri size="20px" weight="600">
+            {title}
+          </Galmuri>
         </S.ContentTitle>
         <S.ContentText>
-          <Galmuri size="12px">{content}</Galmuri>
+          <Galmuri size="12px">
+            {content &&
+              (content.includes("\n") ? (
+                <>
+                  {content.split("\n").map(line => {
+                    return (
+                      <span key={line + Math.floor(Math.random() * 10)}>
+                        {line}
+                        <br />
+                      </span>
+                    );
+                  })}
+                </>
+              ) : (
+                <>
+                  <span>{content}</span>
+                </>
+              ))}
+          </Galmuri>
         </S.ContentText>
         <S.CheerText
           placeholder="응원을 남겨주세요"
@@ -127,7 +159,7 @@ const SendCheerMenu = () => {
           }}
         />
         <S.CheerName
-          placeholder="전달할 이름을 남겨주세요"
+          placeholder="전달할 이름을 남겨주세요 (12글자이하)"
           type="text"
           value={cheerName}
           onChange={e => setCheerName(e.target.value)}

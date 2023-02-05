@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import * as S from "./ProgressBar.style";
 import clovericon from "../../../assets/images/Landing/clover.svg";
 
@@ -15,7 +15,12 @@ const ProgressBar = props => {
       <S.Container>
         <S.ProgressContainer>
           <S.CloverIcon percent={percent}>
-            <object type="image/svg+xml" data={clovericon}>
+            <object
+              type="image/svg+xml"
+              data={clovericon}
+              width="20"
+              height="20"
+            >
               <img src={clovericon} />
             </object>
           </S.CloverIcon>

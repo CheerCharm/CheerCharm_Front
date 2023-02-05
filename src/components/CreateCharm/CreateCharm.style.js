@@ -39,10 +39,10 @@ export const QuesRect = styled.div`
   min-height: 30px;
   height: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
   position: relative;
-  margin-top: 10px;
+  margin-top: 15px;
   overflow: initial;
 `;
 
@@ -54,13 +54,24 @@ export const Ques = styled.div`
   overflow: initial;
   text-align: left;
   word-break: keep-all;
-  position: absolute;
-  left: 0;
+  color: #000;
+`;
+
+export const Ques1 = styled.div`
+  font-family: "Galmuri";
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 25px;
+  overflow: initial;
+  text-align: left;
+  word-break: keep-all;
+  margin-bottom: 5px;
+  color: #929292;
 `;
 
 export const TitleInput = styled.input`
   width: 85%;
-  height: 35px;
+  height: 40px;
   background-color: #fdfbf7;
   border-radius: 8px;
   border: 0;
@@ -71,11 +82,11 @@ export const TitleInput = styled.input`
   font-weight: 400;
   font-size: 14px;
   margin: 10px 0;
-  padding-left: 10px;
+  padding: 3px 0 3px 12px;
 `;
 
 export const ContentInput = styled.textarea`
-  width: 85%;
+  width: 83%;
   height: 100px;
   background-color: #fdfbf7;
   border-radius: 8px;
@@ -88,12 +99,12 @@ export const ContentInput = styled.textarea`
   font-weight: 400;
   font-size: 14px;
   margin: 10px 0;
-  padding: 10px 0 0 10px;
+  padding: 10px 10px 5px 10px;
 `;
 
 export const RangeRect = styled.div`
   width: 88%;
-  height: 80px;
+  height: 75px;
   overflow-x: initial;
   margin-top: 10px;
   div {
@@ -128,7 +139,7 @@ export const RangeRect = styled.div`
 
 export const ImageContainer = styled.div`
   width: 85%;
-  min-height: 830px;
+  height: 1400px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -137,7 +148,7 @@ export const ImageContainer = styled.div`
 
 export const CharmRect = styled.div`
   width: 48%;
-  min-height: 260px;
+  height: 230px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -155,7 +166,7 @@ export const Circle = styled.div`
   height: 24px;
   border-radius: 50%;
   border: 2px solid #afafaf;
-  margin: 10px;
+  margin: 15px;
   display: flex;
   justify-content: center;
   align-items: center;

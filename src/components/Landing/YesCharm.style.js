@@ -42,7 +42,7 @@ export const Transparent = styled.div`
   width: 270px;
   height: 512px;
 
-  background: rgba(253, 251, 247, 0.4);
+  background: rgba(253, 251, 247, 0.6);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 
@@ -68,18 +68,20 @@ export const ImageWrapper = styled.div`
   top: 0;
   left: 0;
   display: flex;
+  margin: 0 auto;
 `;
 
 // 예시, API 나오면 사라질 컴포넌트
-export const Div = styled.div`
-  width: 238px;
-  height: 337px;
-`;
+// export const Div = styled.div`
+//   width: 238px;
+//   height: 337px;
+// `;
 
 export const Img = styled.img`
   width: 238px;
   height: 337px;
-  opacity: 0.7;
+  object-fit: cover;
+  /* opacity: 0.8; */
 `;
 
 export const ArrowWrapperR = styled.img.attrs({ src: `${arrowR}` })``;

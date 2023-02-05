@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import SendCheerMenu from "../components/SendCheer/SendCheerMenu";
 import { useNavigate, useParams } from "react-router-dom";
 import { GetCharm } from "../api/charm";
-import CheeredCharm from "../components/CheerCharm/CheeredCharm";
+import CheeredCharm from "../components/CheerCharm/cheered/CheeredCharm";
 
 const Alert = () => {
   useEffect(() => {
