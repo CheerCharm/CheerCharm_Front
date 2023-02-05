@@ -81,13 +81,15 @@ export const TitleInput = styled.input`
   font-family: "Galmuri";
   font-weight: 400;
   font-size: 14px;
+  line-height: normal;
   margin: 10px 0;
-  padding: 3px 0 3px 12px;
+  padding: 3px 0 3px 10px;
 `;
 
 export const ContentInput = styled.textarea`
   width: 83%;
   height: 100px;
+  line-height: normal;
   background-color: #fdfbf7;
   border-radius: 8px;
   border: 0;

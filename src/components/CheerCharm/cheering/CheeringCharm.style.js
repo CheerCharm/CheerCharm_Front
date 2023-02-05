@@ -53,17 +53,23 @@ export const BubbleImg = styled.img`
 `;
 
 export const LinkRect = styled.div`
-  width: 125px;
-  height: 24px;
-  background: #f1f1f1;
-  border-radius: 5px;
+  width: 100%;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
-  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.2));
-  svg {
-    margin: 0 2px 1px 0;
+  .inner {
+    width: 125px;
+    height: 24px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+    svg {
+      margin: 0 2px 1px 0;
+    }
   }
 `;
 
@@ -159,7 +165,7 @@ export const ButtonImg = styled.img`
   padding: 5px;
   position: absolute;
   @media (min-width: 470px) {
-    width: 85%;
+    width: 80%;
   }
 `;
 

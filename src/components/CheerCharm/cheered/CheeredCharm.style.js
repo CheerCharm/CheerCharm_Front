@@ -35,7 +35,7 @@ export const ButtonRect = styled.div`
   justify-content: center;
   align-items: center;
   margin: 5px;
-  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.2));
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
   svg {
     margin: 0 3px 1px 0;
   }
