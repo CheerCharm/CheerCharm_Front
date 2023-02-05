@@ -4,7 +4,7 @@
 
 ### 🍀 [배포 페이지](https://cheer-charm.vercel.app/) 🍀
 
-<img src="https://user-images.githubusercontent.com/102040717/216834762-ea8be1e5-756e-4367-934a-761d333a42d8.gif" width="800" height="503" />
+<img src="https://user-images.githubusercontent.com/102040717/216835383-cbc9b312-a5f1-44d2-9d96-af8e947fd9b3.gif" width="800" height="503" />
 <br>
 
 ### 🦁 이화여대 멋쟁이사자처럼 10기 졸업 프로젝트 사이트 💚
