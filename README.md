@@ -2,9 +2,9 @@
 
 # 응원이 부적해 front-end
 
-### 🍀[배포 페이지](https://cheer-charm.vercel.app/)🍀
+### 🍀 [배포 페이지](https://cheer-charm.vercel.app/) 🍀
 
-<img src="https://user-images.githubusercontent.com/102040717/215572940-661054d0-96cf-410d-9159-a803328bb25f.gif" width="600" height="618" />
+<img src="https://user-images.githubusercontent.com/102040717/216834762-ea8be1e5-756e-4367-934a-761d333a42d8.gif" width="800" height="503" />
 <br>
 
 ### 🦁 이화여대 멋쟁이사자처럼 10기 졸업 프로젝트 사이트 💚
@@ -14,11 +14,11 @@
 <div align="left">
 
 ### 프로젝트 소개
-> 나만의 **커스텀 부적**을 생성하고 **링크 공유**    
+> 내가 지은 이름과 내가 고른 디자인의 **커스텀 부적**을 생성, 링크 공유 
 
 > 친구의 부적에 **익명으로 닉네임과 내용**을 남겨 응원    
 
-> 응원이 모두 모이면 **완성된 부적 이미지**를 공유    
+> 응원이 모두 모이면 **완성된 부적 이미지**를 저장하여 공유    
 
 > 부적을 생성한 사람만 열람할 수 있는 **비공개 응원 내용**    
 
