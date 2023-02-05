@@ -87,10 +87,6 @@ const CreateCharm = () => {
       }, 4000);
     }
   }, [wait]);
-
-  useEffect(() => {
-    console.log(design);
-  }, [design]);
   return (
     <>
       <Background>
