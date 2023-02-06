@@ -76,10 +76,12 @@ const CheeringCharm = () => {
             }}
           >
             <S.LinkRect>
-              <AiOutlineLink size="12" />
-              <NanoomSquare size="11px" weight="400">
-                내 부적 링크 복사하기
-              </NanoomSquare>
+              <div className="inner">
+                <AiOutlineLink size="12" />
+                <NanoomSquare size="11px" weight="400">
+                  내 부적 링크 복사하기
+                </NanoomSquare>
+              </div>
             </S.LinkRect>
           </CopyToClipboard>
         ) : null}
