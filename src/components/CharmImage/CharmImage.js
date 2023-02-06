@@ -213,8 +213,8 @@ const CharmImage = props => {
           <TextWrapper>
             <div className="track">
               <div className="content">
-                부적 생성중 . . . 부적 생성중 . . . 부적 생성중 . . . 부적
-                생성중 . . . 부적 생성중 . . . 부적 생성중 . . .&nbsp;
+                ﾟ ✽.｡.:*・ﾟ ✽.｡.:*・ﾟ 부적 생성중 . . . ﾟ ✽.｡.:*・ﾟ ✽.｡.:*・ﾟ
+                부적 생성중 . . .&nbsp;
               </div>
             </div>
             <div className="notice">
