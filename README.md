@@ -2,7 +2,7 @@
 
 # 응원이 부적해 front-end
 
-### 🍀 [배포 페이지](https://cheer-charm.vercel.app/) 🍀
+### 🍀 [배포 페이지](https://cheer-charm.swygbro.com/) 🍀
 
 <img src="https://user-images.githubusercontent.com/102040717/216835383-cbc9b312-a5f1-44d2-9d96-af8e947fd9b3.gif" width="800" height="503" />
 <br>
