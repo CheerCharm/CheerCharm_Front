@@ -2,7 +2,8 @@
 
 # 응원이 부적해 front-end
 
-### 🍀 [배포 페이지](https://cheer-charm.swygbro.com/) 🍀
+### 🍀 [배포 링크 바로가기](https://cheer-charm.swygbro.com/) 🍀
+### 💎 [프로젝트 소개](https://www.swygbro.com/contents/9f8a0d54-f110-4eb0-b3fc-262a8c3da2ed) 💎
 
 <img src="https://user-images.githubusercontent.com/102040717/216835383-cbc9b312-a5f1-44d2-9d96-af8e947fd9b3.gif" width="800" height="503" />
 <br>
@@ -47,7 +48,7 @@
    </tr>
 </table>
 
-
+<a href="https://github.com/CheerCharm/CheerCharm_Back">백엔드 레포지토리 바로가기</a>
 
 <br>
 
